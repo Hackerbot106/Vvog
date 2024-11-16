@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VVOG - Immersive VR & PC Gaming</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: #0d0d0d;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #121212;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00ffcc;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ddd;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #00ffcc;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(to bottom, #121212, #0d0d0d);
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin: 20px 0;
+            color: #00ffcc;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #bbb;
+        }
+
+        .hero button {
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #00ffcc;
+            color: #121212;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .hero button:hover {
+            background: #00e6b3;
+        }
+
+        section {
+            padding: 50px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .about, .why-vr, .contact {
+            margin-bottom: 50px;
+        }
+
+        section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #00ffcc;
+        }
+
+        .about p, .why-vr p {
+            text-align: center;
+            font-size: 18px;
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .icons div {
+            text-align: center;
+        }
+
+        .icons div img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        .icons div span {
+            display: block;
+            color: #ddd;
+            font-size: 16px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .contact form input,
+        .contact form textarea {
+            margin-bottom: 20px;
+            padding: 15px;
+            font-size: 16px;
+            border: 1px solid #333;
+            background: #222;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        .contact form input:focus,
+        .contact form textarea:focus {
+            outline: none;
+            border: 1px solid #00ffcc;
+        }
+
+        .contact form button {
+            padding: 15px;
+            font-size: 16px;
+            border: none;
+            background: #00ffcc;
+            color: #121212;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact form button:hover {
+            background: #00e6b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #121212;
+            color: #ccc;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #00ffcc;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">VVOG</div>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#why-vr">Why VR?</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>VVOG</h1>
+        <p>Step into the future of gaming. Redefine reality.</p>
+        <button>Explore Our Games</button>
+        <button>Learn About VR</button>
+    </div>
+
+    <section id="about" class="about">
+        <h2>Who We Are</h2>
+        <p>VVOG is dedicated to pushing the boundaries of gaming with immersive experiences in VR and PC gaming. We combine cutting-edge technology and creative storytelling to create worlds you'll never want to leave.</p>
+    </section>
+
+    <section id="why-vr" class="why-vr">
+        <h2>Why VR Gaming?</h2>
+        <p>Virtual reality offers unparalleled immersion, letting you step into the game and experience it as if it were real. From breathtaking visuals to interactive environments, VR takes gaming to the next level.</p>
+        <div class="icons">
+            <div>
+                <img src="https://via.placeholder.com/80" alt="Immersion Icon">
+                <span>Immersion</span>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/80" alt="Innovation Icon">
+                <span>Innovation</span>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/80" alt="Technology Icon">
+                <span>Technology</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 VVOG. All rights reserved. <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+
+</html>
